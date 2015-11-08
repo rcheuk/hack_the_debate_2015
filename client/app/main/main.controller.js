@@ -2,12 +2,24 @@
 
 angular.module('hackathonApp')
   .controller('MainCtrl', function ($scope, $http, socket) {
-    $scope.awesomeThings = [];
+    var candidates = [{
+      name: "Candidate 1",
+      img: "someimageurl",
+      count: 0
+    }, {
+      name: "Candidate 2",
+      img: "someimageurl",
+      count: 0
+    }];
 
-    $http.get('/api/things').success(function(awesomeThings) {
+    $scope.awesomeThings = candidates;
+
+    /*$http.get('/api/things').success(function(awesomeThings) {
       $scope.awesomeThings = awesomeThings;
-      socket.syncUpdates('thing', $scope.awesomeThings);
-    });
+      //socket.syncUpdates('thing', $scope.awesomeThings);
+    });*/
+
+
 
     $scope.addThing = function() {
       if($scope.newThing === '') {
