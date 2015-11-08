@@ -12,18 +12,18 @@
   <div class="row">
     <div class="col-lg-12">
       <h1 class="page-header">Candidates:</h1>
-      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in awesomeThings">
-        <li><a href="#" tooltip="{{thing.name}}">{{thing.name}}<button type="button" class="close" ng-click="deleteThing(thing)">&times;</button></a></li>
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="candidate in candidates">
+        <li><a href="#" tooltip="{{candidate.name}}">{{candidate.name}}<button type="button" class="close" ng-click="deleteCandidate(candidate)">&times;</button></a></li>
       </ul>
     </div>
   </div>
 
-  <form class="thing-form">
+  <form class="Candidate-form">
     <label>Syncs in realtime across clients</label>
     <p class="input-group">
-      <input type="text" class="form-control" placeholder="Add a new thing here." ng-model="newThing">
+      <input type="text" class="form-control" placeholder="Add a new Candidate here." ng-model="newCandidate">
       <span class="input-group-btn">
-        <button type="submit" class="btn btn-primary" ng-click="addThing()">Add New</button>
+        <button type="submit" class="btn btn-primary" ng-click="addCandidate()">Add New</button>
       </span>
     </p>
   </form>

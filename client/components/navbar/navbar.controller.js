@@ -3,8 +3,8 @@
 angular.module('hackathonApp')
   .controller('NavbarCtrl', function ($scope, $location, Auth) {
     $scope.menu = [{
-      'title': 'Home',
-      'link': '/'
+      'title': 'How to Play',
+      'link': '/howto'
     }];
 
     $scope.isCollapsed = true;

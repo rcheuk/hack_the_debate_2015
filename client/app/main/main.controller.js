@@ -2,38 +2,30 @@
 
 angular.module('hackathonApp')
   .controller('MainCtrl', function ($scope, $http, socket) {
-    var candidates = [{
-      name: "Candidate 1",
-      img: "someimageurl",
-      count: 0
-    }, {
-      name: "Candidate 2",
-      img: "someimageurl",
-      count: 0
-    }];
 
-    $scope.awesomeThings = candidates;
+    $scope.candidates = [];
 
-    /*$http.get('/api/things').success(function(awesomeThings) {
-      $scope.awesomeThings = awesomeThings;
-      //socket.syncUpdates('thing', $scope.awesomeThings);
-    });*/
+    $http.get('/api/candidates').success(function(data) {
+      $scope.candidates = data;
+      socket.syncUpdates('candidate', $scope.candidates);
+    });
 
-
-
-    $scope.addThing = function() {
-      if($scope.newThing === '') {
+    $scope.addCandidate = function() {
+      if($scope.newCandidate === '') {
         return;
       }
-      $http.post('/api/things', { name: $scope.newThing });
-      $scope.newThing = '';
+      $http.post('/api/candidates', { name: $scope.newCandidate });
+      $scope.newCandidate = '';
+      socket.syncUpdates('candidate', $scope.candidates);
     };
 
-    $scope.deleteThing = function(thing) {
-      $http.delete('/api/things/' + thing._id);
+    $scope.deleteCandidate = function(candidate) {
+      console.log('candidate', candidate);
+      $http.delete('/api/candidates/' + candidate._id);
+      socket.syncUpdates('candidate', $scope.candidates);
     };
 
     $scope.$on('$destroy', function () {
-      socket.unsyncUpdates('thing');
+      socket.unsyncUpdates('candidate');
     });
   });
