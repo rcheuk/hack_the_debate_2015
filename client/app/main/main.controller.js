@@ -6,8 +6,6 @@ angular.module('hackathonApp')
     $scope.candidates = [];
 
     $http.get('/api/candidates').success(function(data) {
-      console.log('data', data);
-
       $scope.candidates = data;
       socket.syncUpdates('candidate', $scope.candidates);
     });
@@ -37,13 +35,11 @@ angular.module('hackathonApp')
     });
 
     $scope.clickCandidate = function (candidate) {
-      console.log('click', candidate);
       candidate.count++;
       $scope.updateCandidate(candidate);
     };
 
     $scope.getCandidateClass = function(candidate) {
-      console.log('getclass', candidate.info);
       return candidate.info;
     }
 

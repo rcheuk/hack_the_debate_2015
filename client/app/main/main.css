@@ -130,7 +130,9 @@
 }
 ​
 .candidate-name {
-  font-size: 175%;
+  font-size: 250%;
+  position: absolute;
+  bottom: 0;
 }
 
 .kasich {
