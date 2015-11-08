@@ -3,13 +3,10 @@ angular.module('hackathonApp')
       return {
         restrict: 'EA',
         scope: {
-          candidate: '=candidate',
-          candidateClass: '=candidateClass'
+          candidate: '=candidate'
         },
         link:  function link(scope, element, attrs) {
-          scope.getCandidateClass = function() {
-            return scope.candidateClass;
-          }
+
         },
         templateUrl: 'components/clickCandidate/clickCandidate.html'
       };
