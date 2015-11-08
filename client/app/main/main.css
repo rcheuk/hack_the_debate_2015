@@ -32,3 +32,167 @@
 .navbar-text {
     margin-left: 15px;
 }
+
+/* ----------- menu ---------- */
+​
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  display: inline;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+​
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+​
+.nav a:hover {
+  background-color: #005f5f;
+}
+​
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+​
+@media screen and (min-width: 500px) {
+  .nav li {
+    display: inline-block;
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+}
+
+  /** charts **/
+
+.chart rect {
+  fill: darkred;
+}
+
+.chart text {
+  fill: white;
+  font: 14px sans-serif;
+  text-anchor: end;
+}
+
+​* {
+  font-family: 'Fjalla One', sans-serif;
+}
+​
+.col-md-3 {
+  padding: 5px;
+  transition: all .1s ease-in-out;
+}
+​
+.col-md-3:hover {
+  transform: scale(1.07);
+}
+​
+.col-md-3:active {
+  transform: scale(0.93);
+}
+​
+.candidates-box {
+  min-width: 1000px;
+  min-height: 500px;
+}
+​
+.candidate {
+  border-radius: 1vw;
+  text-transform: uppercase;
+  color: #FFF;
+  text-align: center;
+  vertical-align: bottom;
+  height: 18vw;
+  border: 1vw solid rgba(100,0,0,0.9);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(100,0,0,1);
+}
+​
+.candidate:hover {
+  -webkit-box-shadow: rgba(0,0,0,0.8) 0px 0 10px;
+  -moz-box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+  box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+}
+​
+.candidate-name {
+  font-size: 175%;
+}
+​
+.kasich {
+  background-image: url(http://i.imgur.com/htF2A1Y.png);
+}
+​
+.trump {
+  background-image: url(http://i.imgur.com/fPNbgzd.png);
+}
+​
+.rubio {
+  background-image: url(http://i.imgur.com/EfWxG6Y.jpg);
+}
+​
+.cruz {
+  background-image: url(http://i.imgur.com/pDyzKVW.png);
+}
+​
+.carson {
+  background-image: url(http://i.imgur.com/2Ce0HCm.png);
+}
+​
+.fiorina {
+  background-image: url(http://i.imgur.com/J3mLhBT.png);
+}
+​
+.bush {
+  background-image: url(http://i.imgur.com/pwO3ctB.png);
+}
+​
+.paul {
+  background-image: url(http://i.imgur.com/sRk4UK9.png);
+}
+​
+.col-md-4, .col-md-8 {
+  padding: 5px;
+}
+​
+.dashboard {
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #FFF;
+  text-align: center;
+  vertical-align: bottom;
+  min-height: 150px;
+  margin-top: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+​
+.dataviz {
+  background-color: rgba(255,100,100,0.6);
+  border: 8px solid rgba(255,100,100,0.3);
+}
+​
+.social {
+  background-color: rgba(100,100,255,0.6);
+  border: 8px solid rgba(100,100,255,0.3);
+}
+​

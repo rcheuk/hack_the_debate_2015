@@ -8,7 +8,28 @@
   </div>
 </header>
 
-<div class="container">
+<div class="container candidates-box" style="background-color: #000">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="candidate" ng-class="getCandidateClass(c)" ng-repeat="c in candidates" >
+        <click-candidate candidate="c" ng-click="clickCandidate(c)">
+        </click-candidate>
+      </div>
+    </div>
+  </div>
+
+  <div class="container dashboard-box">
+      <div class="col-md-8">
+        <div class="dashboard dataviz">
+          <svg class="chart"></svg>
+        </div>
+      </div><!--
+   --><div class="col-md-4"><div class="dashboard social"></div></div>
+  </div>
+
+</div>
+
+<!--<div class="container">
   <div class="row">
     <div class="col-lg-12">
       <h1 class="page-header">Candidates:</h1>
@@ -27,7 +48,8 @@
       </span>
     </p>
   </form>
-</div>
+</div>-->
+
 
 <footer class="footer">
   <div class="container">
