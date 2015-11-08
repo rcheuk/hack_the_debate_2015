@@ -1,22 +1,22 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
-<header class="hero-unit" id="banner">
+<!-- <header class="hero-unit" id="banner">
   <div class="container">
     <h1>Candidate Clicker</h1>
     <p class="lead">Instructions: Click ...</p>
     <img src="assets/images/yeoman.png" alt="I'm Yeoman">
   </div>
-</header>
+</header> -->
 
-<div class="container candidates-box" style="background-color: #000">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="candidate" ng-class="getCandidateClass(c)" ng-repeat="c in candidates" >
-        <click-candidate candidate="c" ng-click="clickCandidate(c)">
+<div class="container candidates-box">
+  <!--<div class="row">
+    <div class="col-md-12">-->
+      <div ng-repeat="c in candidates" >
+        <click-candidate candidate="c" candidateClass="c.info" ng-click="clickCandidate(c)">
         </click-candidate>
       </div>
-    </div>
-  </div>
+    <!--</div>
+  </div>-->
 
   <div class="container dashboard-box">
       <div class="col-md-8">

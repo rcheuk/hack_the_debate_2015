@@ -40,7 +40,7 @@ Candidate.find({}).remove(function() {
     count: 23
   },{
     name : 'Paul',
-    info : '',
+    info : 'paul',
     count: 55
   });
 });

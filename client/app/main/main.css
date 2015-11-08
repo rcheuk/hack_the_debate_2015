@@ -91,10 +91,6 @@
   text-anchor: end;
 }
 
-​* {
-  font-family: 'Fjalla One', sans-serif;
-}
-​
 .col-md-3 {
   padding: 5px;
   transition: all .1s ease-in-out;
@@ -103,7 +99,7 @@
 .col-md-3:hover {
   transform: scale(1.07);
 }
-​
+
 .col-md-3:active {
   transform: scale(0.93);
 }
@@ -112,7 +108,7 @@
   min-width: 1000px;
   min-height: 500px;
 }
-​
+
 .candidate {
   border-radius: 1vw;
   text-transform: uppercase;
@@ -126,7 +122,7 @@
   background-repeat: no-repeat;
   background-color: rgba(100,0,0,1);
 }
-​
+
 .candidate:hover {
   -webkit-box-shadow: rgba(0,0,0,0.8) 0px 0 10px;
   -moz-box-shadow: rgba(0,0,0,0.8) 0 0 10px;
@@ -136,39 +132,39 @@
 .candidate-name {
   font-size: 175%;
 }
-​
+
 .kasich {
-  background-image: url(http://i.imgur.com/htF2A1Y.png);
+  background-image: url('http://i.imgur.com/htF2A1Y.png');
 }
-​
+
 .trump {
-  background-image: url(http://i.imgur.com/fPNbgzd.png);
+  background-image: url('http://i.imgur.com/fPNbgzd.png');
 }
 ​
 .rubio {
-  background-image: url(http://i.imgur.com/EfWxG6Y.jpg);
+  background-image: url('http://i.imgur.com/EfWxG6Y.jpg');
 }
 ​
 .cruz {
-  background-image: url(http://i.imgur.com/pDyzKVW.png);
+  background-image: url('http://i.imgur.com/pDyzKVW.png');
 }
 ​
 .carson {
-  background-image: url(http://i.imgur.com/2Ce0HCm.png);
+  background-image: url('http://i.imgur.com/2Ce0HCm.png');
 }
 ​
 .fiorina {
-  background-image: url(http://i.imgur.com/J3mLhBT.png);
+  background-image: url('http://i.imgur.com/J3mLhBT.png');
 }
 ​
 .bush {
-  background-image: url(http://i.imgur.com/pwO3ctB.png);
+  background-image: url('http://i.imgur.com/pwO3ctB.png');
 }
 ​
 .paul {
-  background-image: url(http://i.imgur.com/sRk4UK9.png);
+  background-image: url('http://i.imgur.com/sRk4UK9.png');
 }
-​
+
 .col-md-4, .col-md-8 {
   padding: 5px;
 }
@@ -194,5 +190,10 @@
 .social {
   background-color: rgba(100,100,255,0.6);
   border: 8px solid rgba(100,100,255,0.3);
+}
+​
+
+​* {
+  font-family: 'Fjalla One', sans-serif;
 }
 ​

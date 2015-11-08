@@ -3,10 +3,11 @@ angular.module('hackathonApp')
       return {
         restrict: 'E',
         scope: {
-          candidate: '=candidate'
+          candidate: '=candidate',
+          candidateClass: '=candidateClass'
         },
         link:  function link(scope, element, attrs) {
-          
+
         },
         templateUrl: 'components/clickCandidate/clickCandidate.html'
       };
